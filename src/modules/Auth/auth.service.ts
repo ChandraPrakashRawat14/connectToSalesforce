@@ -141,5 +141,8 @@ FROM Quote Where id ='0Q02t000000YnEeCAK'`;
       compression: 'DEFLATE',
     });
     fs.writeFileSync(`report-${Date.now()}.docx`, buf);
+    return {
+      "templateId":body
+    }
   }
 }
